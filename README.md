@@ -17,22 +17,13 @@ _An app that allows a tap room to track kegs._
 
 ## Specifications
 
-* _App displays a menu of available kegs. Each keg includes: name, brand, price, and alcoholContent._
-* Example Output: name: Franziskaner Hefe-Weisse, brand: Spaten-Franziskaner-Brau, price: $7/pint, Alcohol by volume(ABV): 5.00%
-* _Employee will fill out a form to add it to the list when they tap a new keg._
-* Example Input: name: , brand: , price: , ABV:
-* Example Output: name: 1664 Blanc, brand: Kronenbourg, price: $8/pint, ABV: 5.0%
-* _Either employee or patron can see how many pints remain in a keg (full keg = 124 pints)._
-* Example Input: 1664 Blanc
-* Example Output: 120 pints
-* _Employee can click a button next to each brand to indicate that a pint has been sold._
-* Example Input: 1664 Blanc
-* Example Output: 119
-* _Kegs with fewer than 10 pints remaining will be listed for an employee to see._
-* Example Input: Franziskaner, 1664 Blanc, Guinness, Manny's, Stella Artois
-* Example Output: Kegs with less than 10 pints: Guinness, Manny's, Stella Artois
-* _Kegs will be color coded by price or by style of beer._
-* _Add functionality to sort beers by alcohol content._
+* _App displays a list of current animals in the zoo._
+* _A keeper (user) can access information about each animal: species common name, individual name, age, diet, location, sex, likes, and dislikes._
+* Example Output: species common name: Fiji Mermaid, individual name: Doug, age: 32, diet: omnivore, location: tropical pools, sex: female, likes: mangoes and 80s Pop, dislikes: local politics.
+* _A keeper can add newly-admitted animals to the app._
+* _A keeper can view only young animals (less than 2 years of age)._
+* _A keeper can view only old animals (more than 2 years of age)._
+* _A keeper can edit the name, age, and number of required caretakers for a selected animal._
 
 <!-- ## Further Exploration
 
