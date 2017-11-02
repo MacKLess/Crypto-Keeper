@@ -1,5 +1,5 @@
 {
-  "name": "angular-recipe-box",
+  "name": "Zookeeper",
   "description": "",
   "main": "",
   "license": "MIT",
@@ -13,5 +13,8 @@
   ],
   "dependencies": {
     "bootstrap": "boostrap#^3.3.7"
-  }
+  },
+  "authors": [
+    "LD MacKrell <ldmackrell@gmail.com>"
+  ]
 }
