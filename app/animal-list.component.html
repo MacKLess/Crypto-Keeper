@@ -1,6 +1,6 @@
 <div>
   <ul>
-    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList" class="outside">{{currentAnimal.species}}</li>
+    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | sortBySpecies" class="outside">{{currentAnimal.species}}</li>
   </ul>
   <div *ngIf="this.selectedAnimal">
     <h3>{{this.selectedAnimal.species}}</h3>

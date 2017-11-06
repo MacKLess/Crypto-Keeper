@@ -7,17 +7,19 @@ import { HttpModule } from '@angular/http';
 import { Animal } from './animal.model';
 import { AnimalListComponent } from './animal-list.component';
 import { NewAnimalComponent } from './new-animal.component';
+import { SortPipe } from './sort.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalListComponent,
     NewAnimalComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

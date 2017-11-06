@@ -28,15 +28,7 @@ export class AppComponent {
     new Animal('Macedonian Harpy', 'Ljubica', 44, 'female', 'Aerie', 'stone fuits, fish, and small rodents', 7, 'Lipsmackers lipbalm, climbing hooks, and rope swings', 'Cayenne pepper, cold temperatures, and sailors'),
     new Animal('Macedonian Harpy', 'Snejana', 44, 'female', 'Aerie', 'stone fuits, fish, and small rodents', 7, 'Lipsmackers lipbalm, Tiger Beat magazines, and rope swings', 'Garlic salt, cold temperatures, and sailors'),
     new Animal('Dobhar-chu (Water-hound)', 'Rex', 2, 'male', 'Northend Pools', 'fish, kelp, small amphibians', 6, 'tennis balls and fish heads', 'heat, balloons, and spam'),
-  ].sort(function(a,b){
-    if (a.species > b.species) {
-      return 1;
-    } else if (a.species === b.species){
-      return 0;
-    } else {
-      return -1;
-    }
-  });
+  ];
 
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
