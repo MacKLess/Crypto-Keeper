@@ -1,1 +1,39 @@
-<h3>Add a New Creature</h3>
+<hr>
+<h2>Add a New Creature</h2>
+<div>
+  <label>Enter Species Name:</label>
+  <input #newSpecies>
+</div>
+<div>
+  <label>Enter Individual's Name:</label>
+  <input #newName>
+</div>
+<div>
+  <label>Enter Individual's Age:</label>
+  <input #newAge>
+</div>
+<div>
+  <label>Enter Individual's Gender:</label>
+  <input #newSex>
+</div>
+<div>
+  <label>Enter Zoo Location:</label>
+  <input #newLocation>
+</div>
+<div>
+  <label>Enter Dietary Requirements:</label>
+  <input #newDiet>
+</div>
+<div>
+  <label>Enter Required Number of Caretakers:</label>
+  <input #newCaretakers>
+</div>
+<div>
+  <label>Enter Individual Likes:</label>
+  <input #newLikes>
+</div>
+<div>
+  <label>Enter Individual Dislikes:</label>
+  <input #newDislikes>
+</div>
+<button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newSex.value, newLocation.value, newDiet.value, newCaretakers.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newSex.value=''; newLocation.value=''; newDiet.value=''; newCaretakers.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
