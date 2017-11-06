@@ -17,6 +17,8 @@ export class AgePipe implements PipeTransform {
       output = input.filter(function(b){
         return b.age >= 2;
       });
+    } else {
+      output = input;
     }
     return output;
   }

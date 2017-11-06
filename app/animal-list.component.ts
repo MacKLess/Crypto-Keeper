@@ -10,7 +10,7 @@ export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
   selectedAnimal = null;
-  filterByAge: string = "young";
+  filterByAge: string = "all";
 
   viewAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;

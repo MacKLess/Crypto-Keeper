@@ -18,7 +18,13 @@
 </div>
 <div>
   <label>Enter Zoo Location:</label>
-  <input #newLocation>
+  <select #newLocation>
+    <option [ngValue]="aerie">Aerie</option>
+    <option [ngValue]="desert">Desert Flats</option>
+    <option [ngValue]="forest">Dorest Forest</option>
+    <option [ngValue]="caves">Glass Caves</option>
+    <option [ngValue]="pools">Northend Pools</option>
+  </select>
 </div>
 <div>
   <label>Enter Dietary Requirements:</label>
