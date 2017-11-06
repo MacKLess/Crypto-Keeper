@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { Animal } from './animal.model';
 import { AnimalListComponent } from './animal-list.component';
 import { NewAnimalComponent } from './new-animal.component';
+import { EditAnimalComponent } from './edit-animal.component';
 import { SortPipe } from './sort.pipe';
 import { AgePipe } from './age.pipe';
 
@@ -15,6 +16,7 @@ import { AgePipe } from './age.pipe';
     AppComponent,
     AnimalListComponent,
     NewAnimalComponent,
+    EditAnimalComponent,
     SortPipe,
     AgePipe
   ],

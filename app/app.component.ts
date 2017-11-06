@@ -7,7 +7,6 @@ import { Animal } from './animal.model';
 })
 
 export class AppComponent {
-  // selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
     new Animal('Fiji Mermaid', 'Doug', 32, 'female', 'Northend Pools', 'fish, red corals, warmwater crustacean, waterlogged sailors', 10, 'mangoes and 80s pop', 'local politics'),
@@ -29,9 +28,18 @@ export class AppComponent {
     new Animal('Macedonian Harpy', 'Snejana', 44, 'female', 'Aerie', 'stone fuits, fish, and small rodents', 7, 'Lipsmackers lipbalm, Tiger Beat magazines, and rope swings', 'Garlic salt, cold temperatures, and sailors'),
     new Animal('Dobhar-chu (Water-hound)', 'Rex', 2, 'male', 'Northend Pools', 'fish, kelp, small amphibians', 6, 'tennis balls and fish heads', 'heat, balloons, and spam'),
   ];
+  selectedAnimal = null;
 
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
+  }
+
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
   }
 
 }

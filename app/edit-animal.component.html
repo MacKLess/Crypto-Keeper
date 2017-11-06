@@ -1,0 +1,17 @@
+<div>
+  <div *ngIf="childSelectedAnimal">
+    <h3>{{selectedAnimal.species}}, {{selectedAnimal.name}}</h3>
+    <h2>Edit {{selectedAnimal.name}}'s Stats</h2>
+
+    <label>Rename Creature:</label>
+    <input [(ngModel)]="selectedAnimal.name">
+
+    <label>Update Age:</label>
+    <input [(ngModel)]="selectedAnimal.age">
+
+    <label>Reassign Minimum Caretakers:</label>
+    <input [(ngModel)]="selectedAnimal.caretakers">
+
+    <button (click)="doneButtonClicked()">Update!</button>
+  </div>
+</div>

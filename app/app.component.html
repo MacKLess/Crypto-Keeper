@@ -2,5 +2,6 @@
   <h1>CryptoZoo Key!</h1>
   <p>Cryptid Zoo Management System</p>
   <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+  <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
 </div>

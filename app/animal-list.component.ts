@@ -9,8 +9,8 @@ import { Animal } from './animal.model';
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
-  selectedAnimal = null;
   filterByAge: string = "all";
+  selectedAnimal = null;
 
   viewAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
@@ -22,6 +22,11 @@ export class AnimalListComponent {
 
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
+  }
+
+  editButtonHasBeenClicked(animalToEdit: Animal) {
+    console.log(animalToEdit.name);
+    this.clickSender.emit(animalToEdit);
   }
 
 }
