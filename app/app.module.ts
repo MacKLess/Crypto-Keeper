@@ -8,13 +8,15 @@ import { Animal } from './animal.model';
 import { AnimalListComponent } from './animal-list.component';
 import { NewAnimalComponent } from './new-animal.component';
 import { SortPipe } from './sort.pipe';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalListComponent,
     NewAnimalComponent,
-    SortPipe
+    SortPipe,
+    AgePipe
   ],
   imports: [
     BrowserModule,

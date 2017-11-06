@@ -10,6 +10,7 @@ export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
   selectedAnimal = null;
+  filterByAge: string = "young";
 
   viewAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
@@ -19,8 +20,8 @@ export class AnimalListComponent {
     this.selectedAnimal = null;
   }
 
-// animalHasBeenClicked(animalToView: Animal) {
-//   this.clickSender.emit(animalToView);
-// }
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
+  }
 
 }

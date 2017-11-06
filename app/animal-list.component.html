@@ -1,6 +1,10 @@
 <div>
+  <select (change)="onChange($event.target.value)">
+    <option value="young">2 Yrs or Younger</option>
+    <option value="old">Older than 2</option>
+  </select>
   <ul>
-    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | sortBySpecies" class="outside">{{currentAnimal.species}}</li>
+    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | sortBySpecies | sortByAge:filterByAge" class="outside">{{currentAnimal.species}}</li>
   </ul>
   <div *ngIf="this.selectedAnimal">
     <h3>{{this.selectedAnimal.species}}</h3>
