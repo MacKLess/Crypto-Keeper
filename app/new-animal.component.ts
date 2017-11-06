@@ -3,7 +3,7 @@ import { Animal } from './animal.model';
 
 @Component({
   selector: 'new-animal',
-  templateUrl: 'app/app.new-animal.html'
+  templateUrl: './app/new-animal.component.html'
 })
 
 export class NewAnimalComponent {

@@ -3,13 +3,12 @@ import { Animal } from './animal.model';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html'
+  templateUrl: './app/app.component.html'
 })
 
 export class AppComponent {
-  title = 'CryptoZoo Key!'
 
-  masterTaskList: Animal[] = [
+  masterAnimalList: Animal[] = [
     new Animal('Fiji Mermaid', 'Doug', 32, 'fish, red corals, warmwater crustacean, waterlogged sailors', 'Northend Pools', 10, 'female', 'mangoes and 80s pop', 'local politics'),
     new Animal('Naga', 'Floyd', 125, 'rodents, figs and clay bowls', 'Desert Flats', 3, 'male', 'The New York Times and flower arrangements', 'purple hats'),
     new Animal('Owl Girl', 'Kyrie', 4, 'rodents, other small birds, and the dreams of new mothers', 'Aerie', 3, 'female', 'Cirque de Soliel', 'Animaniacs and Gerbils'),
