@@ -7,9 +7,9 @@ import { Animal } from './animal.model';
 })
 
 export class AppComponent {
-  title = 'The World Famous CryptoZoo!'
+  title = 'CryptoZoo Key!'
 
-  masterTaskList: animals[] = [
+  masterTaskList: Animal[] = [
     new Animal('Fiji Mermaid', 'Doug', 32, 'fish, red corals, warmwater crustacean, waterlogged sailors', 'Northend Pools', 10, 'female', 'mangoes and 80s pop', 'local politics'),
     new Animal('Naga', 'Floyd', 125, 'rodents, figs and clay bowls', 'Desert Flats', 3, 'male', 'The New York Times and flower arrangements', 'purple hats'),
     new Animal('Owl Girl', 'Kyrie', 4, 'rodents, other small birds, and the dreams of new mothers', 'Aerie', 3, 'female', 'Cirque de Soliel', 'Animaniacs and Gerbils'),
@@ -25,8 +25,8 @@ export class AppComponent {
     new Animal('Hedgepixie', 'Thorgood', 55, 'nettles, pine cones, unsupported rumor', 'Dorset Forest', 4, 'female', 'rustling leaves, tennis balls, and midcentury jazz', 'rudeness and sloppy penmanship'),
     new Animal('Pipe Tapper', 'Ted', 3, 'vegetable scraps and flouride-infused water', 'Suburban Sprawl', 8, 'male', 'well-maintained plumbing and percussion instruments', 'bleach and acidic fruit'),
     new Animal('Mongolian Death Worm', 'Brunhilda', 1000, 'camels and parasitic plants local to the Gobi desert', 'Desert Flats', 12, 'female', 'soap operas and dried figs', 'high pitched noises and junk mail' ),
-    new Animal('Macedonian Harpy', 'Ljubica', 44, 'stone fuits, fish, and small rodents', 'Aerie', 7, 'female' 'Lipsmackers lipbalm, climbing hooks, and rope swings', 'Cayenne pepper, cold temperatures, and sailors'),
-    new Animal('Macedonian Harpy', 'Snejana', 44, 'stone fuits, fish, and small rodents', 'Aerie', 7, 'female' 'Lipsmackers lipbalm, Tiger Beat magazines, and rope swings', 'Garlic salt, cold temperatures, and sailors'),
+    new Animal('Macedonian Harpy', 'Ljubica', 44, 'stone fuits, fish, and small rodents', 'Aerie', 7, 'female', 'Lipsmackers lipbalm, climbing hooks, and rope swings', 'Cayenne pepper, cold temperatures, and sailors'),
+    new Animal('Macedonian Harpy', 'Snejana', 44, 'stone fuits, fish, and small rodents', 'Aerie', 7, 'female', 'Lipsmackers lipbalm, Tiger Beat magazines, and rope swings', 'Garlic salt, cold temperatures, and sailors'),
     new Animal('Dobhar-chu (Water-hound)', 'Rex', 2, 'fish, kelp, small amphibians', 'Northend Pools', 6, 'male', 'tennis balls and fish heads', 'heat, balloons, and spam'),
   ];
 }

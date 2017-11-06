@@ -6,14 +6,15 @@
 
 ## Description
 
-_An app that allows a tap room to track kegs._
+_An app that allows a zookeeper of a cryptid zoo track animals as well as their proper care and upkeep._
 
 ## Setup/Installation Requirements
 
 * Clone this repository at [github.com/MacKLess/Crypto-Keeper.git](https://github.com/MacKLess/Crypto-Keeper.git)
 * Install npm and bower.
-* Run npm install.
-* Open index.html in your preferred browser by typing "open index.html" in your terminal.
+* Run ```gulp build```.
+* Run ```gulp serve```/
+* Navigate to ```localhost:3000``` in your preferred browser.
 
 ## Specifications
 
@@ -25,12 +26,12 @@ _An app that allows a tap room to track kegs._
 * _A keeper can view only old animals (more than 2 years of age)._
 * _A keeper can edit the name, age, and number of required caretakers for a selected animal._
 
-<!-- ## Further Exploration
+## Further Exploration
 
 * _Additional functionality that I'd like to include with more time:_
-* Age calculators for all 7 planets (including Pluto).
-* Health factors that can impact longevity like smoking, inactivity, persistent health conditions.
-* Effects of pressure and other factors that impact longevity known to be present as differing planetary conditions (temperature, atmospheric conditions, etc.). -->
+* Detailed backstories on each member of the zoo, including binomial scientific names.
+* More information about each creature's natural habitat.
+* A way to sort each animal by shared habitat.
 
 ## Bugs
 
@@ -46,7 +47,8 @@ _Please contact [ldmackrell@gmail.com](mailto:ldmackrell@gmail.com) with questio
 * jQuery
 * Jasmine
 * Karma
-* Angular
+* Angular2
+* Typescript
 
 ### License
 
