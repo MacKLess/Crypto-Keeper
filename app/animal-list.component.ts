@@ -8,5 +8,19 @@ import { Animal } from './animal.model';
 
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
-  // @Output() clickSender = new EventEmitter();
+  @Output() clickSender = new EventEmitter();
+  selectedAnimal = null;
+
+  viewAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedViewing() {
+    this.selectedAnimal = null;
+  }
+
+// animalHasBeenClicked(animalToView: Animal) {
+//   this.clickSender.emit(animalToView);
+// }
+
 }

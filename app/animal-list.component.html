@@ -1,3 +1,19 @@
-<ul>
-  <li *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.species}}</li>
-</ul>
+<div>
+  <ul>
+    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList" class="outside">{{currentAnimal.species}}</li>
+  </ul>
+  <div *ngIf="this.selectedAnimal">
+    <h3>{{this.selectedAnimal.species}}</h3>
+    <p>Individual's name: <strong>{{this.selectedAnimal.name}}</strong></p>
+    <p>Age: {{this.selectedAnimal.age}}</p>
+    <p>Gender: {{this.selectedAnimal.sex}}</p>
+    <p>Zoo location: {{this.selectedAnimal.location}}</p>
+    <hr>
+    <h4>Care Details:</h4>
+    <p>Diet primarily consists of: {{this.selectedAnimal.diet}}</p>
+    <p>No. of Required Caretakers: {{this.selectedAnimal.caretakers}}</p>
+    <p>Likes: {{this.selectedAnimal.likes}}</p>
+    <p>Dislikes: {{this.selectedAnimal.dislikes}}</p>
+    <button (click)="doneButtonClicked">Back to List</button>
+  </div>
+</div>
